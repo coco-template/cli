@@ -1,0 +1,47 @@
+{
+  "name": "tango-cli",
+  "version": "0.0.1",
+  "description": "yet, just simple quick start for cli",
+  "author": {
+    "name": "jian.huang",
+    "email": "hjj491229492@hotmail.com"
+  },
+  "private": true,
+  "bin": {
+    "tv-love": "./bin/tv-love.js"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "build:watch": "nest build --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "commander": "^9.4.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^7.2.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.0.0",
+    "@nestjs/schematics": "^9.0.0",
+    "@nestjs/testing": "^9.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@types/jest": "28.1.4",
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "28.1.2",
+    "prettier": "^2.3.2",
+    "ts-jest": "28.0.5",
+    "tsconfig-paths": "4.0.0",
+    "typescript": "^4.3.5"
+  }
+}
