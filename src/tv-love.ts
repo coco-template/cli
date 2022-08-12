@@ -14,10 +14,15 @@ program
     /* ==================================================== */
     /* =========== 创建 DI 容器 ========== */
     /* ==================================================== */
-    await NestFactory.createApplicationContext(LoveModule.forRoot(source, options), {
+    const app = await NestFactory.createApplicationContext(LoveModule.forRoot(source, options), {
       // 命令行，禁用内部日志
       logger: ['error'],
     });
+
+    /* ==================================================== */
+    /* =========== 资源释放 ========== */
+    /* ==================================================== */
+    await app.close();
   });
 
 program.parseAsync(process.argv);
